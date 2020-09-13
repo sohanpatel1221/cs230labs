@@ -1,0 +1,20 @@
+.bg-cover{
+    background-image: url("../../img/car1.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.center-me{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.form-signin{
+    
+    padding: 20px;
+    text-align: center;
+    
+}
