@@ -61,7 +61,7 @@ require "includes/header.php"
 
     </form>
 
-    <div class ="text-center"> Already a member <a href="login.html"> Sign in </a> </div>
+    <div class ="text-center"> Already a member <a href="login.php"> Sign in </a> </div>
         
 </div>
             </div>
