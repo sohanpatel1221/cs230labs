@@ -8,7 +8,7 @@ require 'includes/header.php';
         <div class="gallery-container">
             <?php
                 include_once 'includes/dbhandler.php';
-                $sql = "SELECT * FROM cars ORDER BY upload_data DESC";
+                $sql = "SELECT * FROM cars ORDER BY upload DESC";
                 $stmt = mysqli_stmt_init($conn);
 
                 if(!mysqli_stmt_prepare($stmt, $sql)){
@@ -19,7 +19,7 @@ require 'includes/header.php';
                     $result = mysqli_stmt_get_result($stmt);
                     while($row = mysqli_fetch_assoc($result)){
                        echo ' <div class="card">
-                            <a href="#">
+                            <a href="review.php?id='.$row['pid'].'">
                                 <img src="cars/'.$row["picpath"].'">
                                 <h3>'.$row["title"].'</h3>
                                 <p>'.$row["descript"].'</p>
