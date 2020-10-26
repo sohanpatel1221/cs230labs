@@ -4,11 +4,11 @@ date_default_timezone_set('UTC');
 
 if(isset($_POST['review-submit'])){
     session_start();
-    $uname = $_SESSION['username'];
+    $uname = $_SESSION['uname'];
     $title = $_POST['review-title'];
     $date = date('Y-m-d H:i:s');
     $review = $_POST['review'];
-    $item_id = $_POST['item_id'];
+    $item_id = $_POST['item-id'];
     $rating = $_POST['rating'];
 
 
