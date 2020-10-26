@@ -83,14 +83,14 @@ $(document).ready(function() {
     //Used to interchangeably send GET requests for review display data. 
     function xhr_getter(prefix,element){
         var xhttp = new XMLHttpRequest();
-        xhhtp.onreadystatechange = function(){
+        xhttp.onreadystatechange = function(){
 
             if(this.readyState == 4 && this.status ==200){
                 document.getElementById(element).innerHTML = this.responseText;
             }
         };
         url = prefix+id;
-        xhhtp.open("GET", url, true);
+        xhttp.open("GET", url, true);
         xhttp.send();
 
     }
